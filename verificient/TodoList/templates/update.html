@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block content %}
+
+
+<div class="col-lg-4 mx-auto shadow p-0 mt-4">
+    <div class="alert alert-info">
+        <h2 class="text-center">Update Task</h2>
+
+    </div>
+    <div class="p-4 addbook">
+        {% for i in data %}
+        <form method="POST" action="{% url 'update' i.id %}">
+            {% csrf_token %} Task Name: <input type="text" name="task_name" id="" value="{{i.name}}" required>
+
+            <br>
+            <br>BTask Detail:
+            <input type="text" name="task_detail" id="" value="{{i.detail}}" required>
+            <br>
+            <br><input type="submit" value="Update Task" class="btn btn-primary">
+
+
+        </form>
+        {% endfor %}
+    </div>
+
+</div>
+
+
+{% endblock content %}

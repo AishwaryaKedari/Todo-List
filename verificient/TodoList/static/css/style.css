@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: url('../images/background.jpg') no-repeat;
+    background-size: 100%;
+    color: white;
+    height: 400px;
+    padding: 100px 0 0 0;
+}
+
+.tsk {
+    background: url('../images/login.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.clr {
+    color: blanchedalmond;
+}
